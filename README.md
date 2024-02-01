@@ -1,18 +1,37 @@
-## Getting Started
+# Algorithms: Test Yourself (Written in Java)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Welcome to my little project that has helped me improve on my understanding and implementation of various common algorithms.
 
-## Folder Structure
+## Prerequisites
+- Understanding of the Java programming language.
 
-The workspace contains two folders by default, where:
+### Installation
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+A step by step series of examples that tell you how to get a development environment running:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+1. Clone the repository to your local machine:
+   ```sh
+   git clone https://github.com/jfelic/algorithms-test-yourself.git
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+2. Ensure that you have the Java Development Kit (JDK) installed. You can check your Java version by running:
+    ```sh
+    java --version
 
-## Dependency Management
+3. Import the Project into your IDE (not necessary if you've been working in the terminal in your IDE)
+    ```sh
+    IntelliJ IDEA:
+    -Open IntelliJ IDEA and select "Open or Import".
+    -Navigate to the directory where you cloned the project, select the -project folder, and click "Open".
+    -IntelliJ should automatically recognize the project as a Java project and set it up accordingly.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+    Eclipse:
+    -Open Eclipse and go to "File" > "Import".
+    -Choose "Existing Projects into Workspace" under "General", then click "Next".
+    -Browse to the cloned project directory, select the project, and click "Finish".
+
+    Visual Studio Code:
+    -Open Visual Studio Code.
+    -Go to "File" > "Open Folder" and select the cloned project directory.
+    -You may need to install the "Java Extension Pack" from the VS Code marketplace for better Java support.
+
+### Have fun!
