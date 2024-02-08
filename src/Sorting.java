@@ -43,38 +43,60 @@ public class Sorting {
         }
     }
 
-    public static void newSelectionSort(int[] arr) {
-        int i, j, minIndex, temp;
+    // public static 
+    // public static void newSelectionSort(int[] arr) {
+    //     int i, j, minIndex, temp;
+    //     int n = arr.length;
+
+    //     for(i = 0; i < n - 1; i++) {
+    //         minIndex = i;
+    //         for(j = i + 1; j < n; j++) {
+    //             if(arr[j] < arr[minIndex]) {
+    //                 minIndex = j;
+    //             }
+    //         }
+    //         if(minIndex != i) {
+    //             temp = arr[i];
+    //             arr[i] = arr[minIndex];
+    //             arr[minIndex] = temp;
+    //         }
+    //     }
+    // }
+
+    public static void selectionSortPractice(int[] arr) {
+        int i, j, temp, minIndex;
         int n = arr.length;
 
         for(i = 0; i < n - 1; i++) {
             minIndex = i;
-            for(j = i + 1; j < n; j++) {
-                if(arr[j] < arr[minIndex]) {
+            for(j = i + 1; j < n; j++) { /* arr[j] is initialized the element 
+                                            next to arr[i] */ 
+                if(arr[minIndex] > arr[j]) {
                     minIndex = j;
                 }
-            }
-            if(minIndex != i) {
-                temp = arr[i];
-                arr[i] = arr[minIndex];
-                arr[minIndex] = temp;
+
+                if(minIndex != i) {
+                    temp = arr[i];
+                    arr[i] = arr[minIndex];
+                    arr[minIndex] = temp;
+                }
             }
         }
     }
 
-    public static void insertionSort(int[] arr) {
-        int i, j;
-        
-                                            // i acts as a cutoff point in the array, separating
-         for(i = 1; i < arr.length; i++) {  // the sorted portion (to the left of i) from the 
-                                            // unsorted portion (to the right of i).
-            int temp = arr[i];
+    public static void insertionSortPractice(int[] arr) {
+        int i, j, temp;
+        int n = arr.length;
+
+        for(i = 1; i < n; i ++) {
             j = i;
-            while(j > 0 && arr[j - 1] >= temp) {
+
+            while( j > 0 && arr[j] < arr[j - 1] ) {
+                temp = arr[j];
                 arr[j] = arr[j - 1];
+                arr[j - 1] = temp;
                 j--;
             }
-        arr[j] = temp;
         }
     }
 

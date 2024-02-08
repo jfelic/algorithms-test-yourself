@@ -6,7 +6,7 @@ public class App {
         System.out.print( "Unsorted:\n"); 
         Sorting.display(myArray);
         
-        Sorting.bubbleSortPractice(myArray);
+        Sorting.insertionSortPractice(myArray);
         System.out.print("\n\nSorted:\n"); 
         Sorting.display(myArray);
         
